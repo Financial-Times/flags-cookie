@@ -13,4 +13,4 @@ branches:
       required_status_checks:
         strict: false
         contexts:
-          - build-and-release
+          - test
