@@ -1,0 +1,13 @@
+_extends: specialist-github-config
+
+repository:
+  topics: specialist-titles
+
+branches:
+  - name: main
+    protection:
+      # Require CI status checks to pass
+      required_status_checks:
+        strict: false
+        contexts:
+          - build-and-release
