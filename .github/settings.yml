@@ -1,7 +1,10 @@
 _extends: specialist-github-config
 
 repository:
+  name: specialist-flags-cookie
   topics: specialist-titles
+  default_branch: main
+  private: false
 
 branches:
   - name: main

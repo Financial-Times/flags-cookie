@@ -1,0 +1,46 @@
+version: 2.1
+orbs:
+  node: circleci/node@2.0.3
+
+jobs:
+  test:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/install-packages
+      - run:
+          name: Test source code
+          command: npm test
+  publish:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/install-packages
+      - run:
+          name: Build dist
+          command: npm build
+      - run:
+          name: Write version to package.json
+          command: npx dot-json dot-json package.json version ${CIRCLE_TAG:1}
+      - run: 
+          name: Write NPM Token to ~/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - run:
+          name: Publish to NPM
+          command: npm publish --access=public
+
+
+workflows:
+  test-and-release:
+    jobs:
+      - test
+      - publish:
+          filters:
+            tags:
+              only: /v[0-9]+(\.[0-9]+)*/
+            branches:
+              ignore: /.*/
+          requires:
+            - test
