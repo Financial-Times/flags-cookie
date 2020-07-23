@@ -23,7 +23,7 @@ jobs:
           command: npm build
       - run:
           name: Write version to package.json
-          command: npx dot-json dot-json package.json version ${CIRCLE_TAG:1}
+          command: npx dot-json package.json version ${CIRCLE_TAG:1}
       - run: 
           name: Write NPM Token to ~/.npmrc
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
