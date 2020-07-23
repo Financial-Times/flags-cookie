@@ -1,0 +1,30 @@
+{
+  "name": "@financial-times/specialist-flags-cookie",
+  "version": "1.0.0",
+  "description": "A utility for interacting with the `specialist-flags` cookie.",
+  "main": "dist/specialist-flags-cookie.js",
+  "types": "dist/specialist-flags-cookie.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "tsc",
+    "test": "jest --forceExit --runInBand --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Financial-Times/specialist-node-toolkit.git"
+  },
+  "author": "Alex Wilson <alex@alexwilson.tech> (https://alexwilson.tech/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Financial-Times/specialist-flags-cookie/issues"
+  },
+  "homepage": "https://github.com/Financial-Times/specialist-flags-cookie#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.11.0",
+    "jest": "^25.3.0",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.8.3"
+  }
+}
