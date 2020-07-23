@@ -1,9 +1,9 @@
 {
-  "name": "@financial-times/specialist-flags-cookie",
+  "name": "@financial-times/flags-cookie",
   "version": "1.0.0",
-  "description": "A utility for interacting with the `specialist-flags` cookie.",
-  "main": "dist/specialist-flags-cookie.js",
-  "types": "dist/specialist-flags-cookie.d.ts",
+  "description": "A utility for interacting with the flags cookies.",
+  "main": "dist/flags-cookie.js",
+  "types": "dist/flags-cookie.d.ts",
   "scripts": {
     "build": "tsc",
     "prepublish": "tsc",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Financial-Times/specialist-node-toolkit.git"
+    "url": "git+https://github.com/Financial-Times/flags-cookie.git"
   },
   "author": "Alex Wilson <alex@alexwilson.tech> (https://alexwilson.tech/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Financial-Times/specialist-flags-cookie/issues"
+    "url": "https://github.com/Financial-Times/flags-cookie/issues"
   },
-  "homepage": "https://github.com/Financial-Times/specialist-flags-cookie#readme",
+  "homepage": "https://github.com/Financial-Times/flags-cookie#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^25.2.1",

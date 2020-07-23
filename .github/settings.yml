@@ -1,7 +1,8 @@
 _extends: specialist-github-config
 
 repository:
-  name: specialist-flags-cookie
+  name: flags-cookie
+  description: A utility library for interacting with flag override cookies.
   topics: specialist-titles
   default_branch: main
   private: false

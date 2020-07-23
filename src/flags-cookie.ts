@@ -1,10 +1,4 @@
-export class SpecialistFlagsCookie {
-
-    /**
-     * Default cookie name.
-     */
-    public static COOKIE_NAME: string = "specialist-flags"
-
+export class FlagsCookie {
     /**
      * Value of the flags.
      */
@@ -60,4 +54,4 @@ export class SpecialistFlagsCookie {
     }
 }
 
-export default SpecialistFlagsCookie
+export default FlagsCookie
